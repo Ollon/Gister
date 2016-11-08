@@ -7,7 +7,7 @@ namespace EchelonTouchInc.Gister.Api
     {
         public string Clean(string content)
         {
-            var itemsToBeCleaned = new Dictionary<string,string>
+            Dictionary<string, string> itemsToBeCleaned = new Dictionary<string,string>
                                        {
                                            {"\t", "\\t"},
                                            {"\r", "\\r"},

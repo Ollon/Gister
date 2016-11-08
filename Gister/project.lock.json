@@ -1,0 +1,1251 @@
+{
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6": {
+      "Microsoft.VisualStudio.CoreUtility/15.0.25726-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CoreUtility.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CoreUtility.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Editor/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI.Wpf": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Editor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Editor.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Imaging/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Imaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Imaging.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.OLE.Interop/7.10.6070": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.15.0/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Imaging": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Framework": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727",
+          "Microsoft.VisualStudio.Shell.Interop.9.0": "9.0.30729",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Threading": "15.0.20-pre",
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.15.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.15.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Framework/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Shell.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Shell.Framework.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop/7.10.6071": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.10.0/10.0.30319": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.12.0/12.0.30110": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.11.0": "11.0.61030",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.12.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.12.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.11.0": "11.0.61030",
+          "Microsoft.VisualStudio.Shell.Interop.12.0": "12.0.30110"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.9.0/9.0.30729": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.9.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.9.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.Data/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.Data.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.Logic/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.Logic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.Logic.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.UI/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.UI.Wpf/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.Wpf.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Threading/15.0.20-pre": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Validation": "15.0.11-pre"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Threading.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Utilities/15.0.25720-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Utilities.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Utilities.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Validation/15.0.11-pre": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Validation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Validation.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.3.0-preview1-24530-04": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        }
+      },
+      "VSSDK.DTE/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.IDE": "[7.0.4, 8.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte.dll": {},
+          "lib/net20/stdole.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte.dll": {},
+          "lib/net20/stdole.dll": {}
+        }
+      },
+      "VSSDK.DTE.10/10.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.DTE.8": "[8.0.4, 9.0.0)",
+          "VSSDK.DTE.9": "[9.0.4, 10.0.0)",
+          "VSSDK.IDE.10": "[10.0.4, 11.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte100.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte100.dll": {}
+        }
+      },
+      "VSSDK.DTE.8/8.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.IDE.8": "[8.0.4, 9.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte80.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte80.dll": {}
+        }
+      },
+      "VSSDK.DTE.9/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.DTE.8": "[8.0.4, 9.0.0)",
+          "VSSDK.IDE.9": "[9.0.4, 10.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte90.dll": {},
+          "lib/net20/envdte90a.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte90.dll": {},
+          "lib/net20/envdte90a.dll": {}
+        }
+      },
+      "VSSDK.IDE/7.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.10/10.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.8/8.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.9/9.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      }
+    },
+    ".NETFramework,Version=v4.6/win": {
+      "Microsoft.VisualStudio.CoreUtility/15.0.25726-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.CoreUtility.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.CoreUtility.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Editor/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI.Wpf": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Editor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Editor.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Imaging/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Imaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Imaging.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.OLE.Interop/7.10.6070": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.15.0/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Imaging": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Framework": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727",
+          "Microsoft.VisualStudio.Shell.Interop.9.0": "9.0.30729",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Threading": "15.0.20-pre",
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.15.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.15.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Framework/15.0.25720-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25720-Preview5",
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Utilities": "15.0.25720-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Shell.Framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Shell.Framework.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop/7.10.6071": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.10.0/10.0.30319": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.12.0/12.0.30110": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.11.0": "11.0.61030",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.12.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.12.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.10.0": "10.0.30319",
+          "Microsoft.VisualStudio.Shell.Interop.11.0": "11.0.61030",
+          "Microsoft.VisualStudio.Shell.Interop.12.0": "12.0.30110"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.TextManager.Interop.8.0": "8.0.50727"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Shell.Interop.9.0/9.0.30729": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.Shell.Interop.8.0": "8.0.50727",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.9.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.Shell.Interop.9.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.Data/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.Data.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.Logic/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.Logic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.Logic.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.UI/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Text.UI.Wpf/15.0.25726-Preview5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.CoreUtility": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Data": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.Logic": "15.0.25726-Preview5",
+          "Microsoft.VisualStudio.Text.UI": "15.0.25726-Preview5"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Text.UI.Wpf.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.OLE.Interop": "7.10.6070",
+          "Microsoft.VisualStudio.Shell.Interop": "7.10.6071",
+          "Microsoft.VisualStudio.TextManager.Interop": "7.10.6070"
+        },
+        "compile": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Threading/15.0.20-pre": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.VisualStudio.Validation": "15.0.11-pre"
+        },
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Threading.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Utilities/15.0.25720-Preview5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Utilities.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Utilities.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.Validation/15.0.11-pre": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.VisualStudio.Validation.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.VisualStudio.Validation.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.3.0-preview1-24530-04": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
+        }
+      },
+      "VSSDK.DTE/7.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.IDE": "[7.0.4, 8.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte.dll": {},
+          "lib/net20/stdole.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte.dll": {},
+          "lib/net20/stdole.dll": {}
+        }
+      },
+      "VSSDK.DTE.10/10.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.DTE.8": "[8.0.4, 9.0.0)",
+          "VSSDK.DTE.9": "[9.0.4, 10.0.0)",
+          "VSSDK.IDE.10": "[10.0.4, 11.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte100.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte100.dll": {}
+        }
+      },
+      "VSSDK.DTE.8/8.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.IDE.8": "[8.0.4, 9.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte80.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte80.dll": {}
+        }
+      },
+      "VSSDK.DTE.9/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "VSSDK.DTE": "[7.0.4, 8.0.0)",
+          "VSSDK.DTE.8": "[8.0.4, 9.0.0)",
+          "VSSDK.IDE.9": "[9.0.4, 10.0.0)"
+        },
+        "compile": {
+          "lib/net20/envdte90.dll": {},
+          "lib/net20/envdte90a.dll": {}
+        },
+        "runtime": {
+          "lib/net20/envdte90.dll": {},
+          "lib/net20/envdte90a.dll": {}
+        }
+      },
+      "VSSDK.IDE/7.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.10/10.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.8/8.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "VSSDK.IDE.9/9.0.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.VisualStudio.CoreUtility/15.0.25726-Preview5": {
+      "sha512": "i2k103MQ006nc8U4w8CvC2Vy8adNiw5IgjLx5yEk+zgMS0JrS5GECM9Aq4CxUN6bP0x5Er4f6BorXpo1YdXWxw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.coreutility/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.CoreUtility.dll",
+        "lib/net45/microsoft.visualstudio.coreutility.xml",
+        "microsoft.visualstudio.coreutility.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.coreutility.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Editor/15.0.25726-Preview5": {
+      "sha512": "3x6zk/11zLg6COA8p2DLSptFhWk2vgl/mWnOSkKmD6RM5sj3zyArryTvbxxgVmqFdtzgUFhdOKmxhKUaQykciA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.editor/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Editor.dll",
+        "lib/net45/microsoft.visualstudio.editor.xml",
+        "microsoft.visualstudio.editor.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.editor.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Imaging/15.0.25720-Preview5": {
+      "sha512": "6vSmTqSrPFO+jxf+NVk4YNOxqMWkgr2PNxuJ1QZs7A3JeLxm58DPx78T3VrpVtXPn5MtyIYMMgEH+pbnOvEvjA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.imaging/15.0.25720-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Imaging.dll",
+        "lib/net45/microsoft.visualstudio.imaging.xml",
+        "microsoft.visualstudio.imaging.15.0.25720-preview5.nupkg.sha512",
+        "microsoft.visualstudio.imaging.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+      "sha512": "vXzcJ0FCh3MEKXk0G2M9urmi25NZR3N5lsfCpRrpxKPvRuddRPsPD/Uds1tHIg72d6rFdkgUTNlPzjA/vC4eTg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.imaging.interop.14.0.designtime/15.0.25726-preview5",
+      "files": [
+        "lib/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll",
+        "lib/microsoft.visualstudio.imaging.interop.14.0.designtime.xml",
+        "microsoft.visualstudio.imaging.interop.14.0.designtime.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.imaging.interop.14.0.designtime.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop/7.10.6070": {
+      "sha512": "qbAjubmKEMFgiU+jHSYh91JA3VuMYkVsvMyfbie4hCxveIMixveb8Fc3DFJlFdGJF5nngi0EpGOsUjndlMSJmw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.ole.interop/7.10.6070",
+      "files": [
+        "lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "lib/Microsoft.VisualStudio.OLE.Interop.xml",
+        "microsoft.visualstudio.ole.interop.7.10.6070.nupkg.sha512",
+        "microsoft.visualstudio.ole.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.15.0/15.0.25720-Preview5": {
+      "sha512": "Hd8TxV+RphC8byeFhkIScu98yANhjCCS6+XYaRTUyMa79cbI3uYUcdLhzfsgj4d0GC6qZp8kuvFOM+wn0/X6Fw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.15.0/15.0.25720-preview5",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.15.0.dll",
+        "microsoft.visualstudio.shell.15.0.15.0.25720-preview5.nupkg.sha512",
+        "microsoft.visualstudio.shell.15.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Framework/15.0.25720-Preview5": {
+      "sha512": "tfXUXMtzUVEPc1DeWOd2g5IOe1zTJUS0ghbt5P3WkDXVQOIov1m+qGNESGeA/fCnL8j8wDQq5GlyLXlM2AETUw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.framework/15.0.25720-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Shell.Framework.dll",
+        "microsoft.visualstudio.shell.framework.15.0.25720-preview5.nupkg.sha512",
+        "microsoft.visualstudio.shell.framework.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop/7.10.6071": {
+      "sha512": "2qNRyqc/oejFU+TyXTeLWEiGV12VKmc/QuDxCnlHGvEQHgNx1aRsqh2noxnuNvxmKku6U7Wqw30bGF2jFXpttw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop/7.10.6071",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.xml",
+        "microsoft.visualstudio.shell.interop.7.10.6071.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.10.0/10.0.30319": {
+      "sha512": "dc76R9Z6lItx/N3WCbQGRVmgfe1APhLEJQbcNiydCLnCUUKhtSbKJSIis5/VraSVSEfQBH8CfY39Vgrty8nwMQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.10.0/10.0.30319",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.10.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.10.0.xml",
+        "microsoft.visualstudio.shell.interop.10.0.10.0.30319.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.10.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.11.0/11.0.61030": {
+      "sha512": "g4y7QvXjltZWMG/QeG3a2qWRvRYrEeG0MUc9ub8OfdjRXbRwpgnLC6w7bkmJGEMgt/9xObNvYbUV8rQOvE+U7A==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.11.0/11.0.61030",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.11.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.11.0.xml",
+        "microsoft.visualstudio.shell.interop.11.0.11.0.61030.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.11.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.12.0/12.0.30110": {
+      "sha512": "rf0rT3Gi0FC6lMdu6CoaUyNC7r/iCy6//J4AUN2IFCP9lDV/XvZtzoe9qKhjQ8jdILLtZkp6ZsCv7zt04NKaUg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.12.0/12.0.30110",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.12.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.12.0.xml",
+        "microsoft.visualstudio.shell.interop.12.0.12.0.30110.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.12.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime/15.0.25726-Preview5": {
+      "sha512": "xbw6cZdzqb9wAI/gKR1kwrC1ngEaEkwwplg2QsOz7yMSTF00DpbQKyCvkwTuz2K+4T3jSC8GWZ8E69SLGgIdvQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.14.0.designtime/15.0.25726-preview5",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll",
+        "lib/microsoft.visualstudio.shell.interop.14.0.designtime.xml",
+        "microsoft.visualstudio.shell.interop.14.0.designtime.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.14.0.designtime.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.8.0/8.0.50727": {
+      "sha512": "905lrDtGkhUdceV9DtSRF+c9++5OXyS1tXsgDzaJ49JgXnlDMPBOhRD3JIlFV9Romy0+tOsmdfTU8HyktHEqrg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.8.0/8.0.50727",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.8.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.8.0.xml",
+        "microsoft.visualstudio.shell.interop.8.0.8.0.50727.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.8.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Shell.Interop.9.0/9.0.30729": {
+      "sha512": "fLbQa6qWQi5f2OYku40GDDwJcs5jHXxh0UG6IM6jyjRKRYBLiiBrR5HbD5qOcKe10TrzBRWYK5ZbbtYFh8K3gg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.shell.interop.9.0/9.0.30729",
+      "files": [
+        "lib/Microsoft.VisualStudio.Shell.Interop.9.0.dll",
+        "lib/Microsoft.VisualStudio.Shell.Interop.9.0.xml",
+        "microsoft.visualstudio.shell.interop.9.0.9.0.30729.nupkg.sha512",
+        "microsoft.visualstudio.shell.interop.9.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Text.Data/15.0.25726-Preview5": {
+      "sha512": "Q1w3kVGeaw+FsWcwwSMkeFBOChXQu08OIBZE/+nmiMBeTLK2IjPG7SxRYHjSXwUpzU4NfjlszuSjQg4KrycQrg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.text.data/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Text.Data.dll",
+        "lib/net45/microsoft.visualstudio.text.data.xml",
+        "microsoft.visualstudio.text.data.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.text.data.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Text.Logic/15.0.25726-Preview5": {
+      "sha512": "VK0SyFLNmDXHVSAQAxyV+A0hJxQcCJLFrPV6jKBLRWsZbsbYL6dfJoW7DCf2TbtNfvZw/0JFBrHifXZAffhpPw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.text.logic/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Text.Logic.dll",
+        "lib/net45/microsoft.visualstudio.text.logic.xml",
+        "microsoft.visualstudio.text.logic.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.text.logic.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Text.UI/15.0.25726-Preview5": {
+      "sha512": "JLsnZjaAOYXfxqw/DAHbOfRO+mnzwnZ+oCG0T5UaA+piVv8sMf9KJr1oMClmHZ7z9ABtx1daEdi/I99nYJZryQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.text.ui/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Text.UI.dll",
+        "lib/net45/microsoft.visualstudio.text.ui.xml",
+        "microsoft.visualstudio.text.ui.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.text.ui.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Text.UI.Wpf/15.0.25726-Preview5": {
+      "sha512": "qnDFS/glJkgICMtyd7UHIMFRqM2/FLDYn/P9LoIFluox2BV4Psh/E3s6JiyBe/jY+EM+qUGIXABqZWuxZE4Xzw==",
+      "type": "package",
+      "path": "microsoft.visualstudio.text.ui.wpf/15.0.25726-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Text.UI.Wpf.dll",
+        "lib/net45/microsoft.visualstudio.text.ui.wpf.xml",
+        "microsoft.visualstudio.text.ui.wpf.15.0.25726-preview5.nupkg.sha512",
+        "microsoft.visualstudio.text.ui.wpf.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.TextManager.Interop/7.10.6070": {
+      "sha512": "4sg+M8RD4qziRvsH4zmaLP2xAZ5MAqf3gj7F7XIOWlYWaBwKDOx1x+i/pelXRXROcoynFj1MfzeCH4j+4VqNug==",
+      "type": "package",
+      "path": "microsoft.visualstudio.textmanager.interop/7.10.6070",
+      "files": [
+        "lib/Microsoft.VisualStudio.TextManager.Interop.dll",
+        "lib/Microsoft.VisualStudio.TextManager.Interop.xml",
+        "microsoft.visualstudio.textmanager.interop.7.10.6070.nupkg.sha512",
+        "microsoft.visualstudio.textmanager.interop.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.50727": {
+      "sha512": "E3V5pBoiqMxAomR/lKz0jlIs85LHHbHOxZea3066hpzIpuq03gpwZcsEAGb4FvNmszqLCe3V6Bm50KbPV8FfGQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.textmanager.interop.8.0/8.0.50727",
+      "files": [
+        "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.dll",
+        "lib/Microsoft.VisualStudio.TextManager.Interop.8.0.xml",
+        "microsoft.visualstudio.textmanager.interop.8.0.8.0.50727.nupkg.sha512",
+        "microsoft.visualstudio.textmanager.interop.8.0.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Threading/15.0.20-pre": {
+      "sha512": "A3VlISVGxXvQIgMsGXFdKmLPd+jsbh5rbkX4kJdi1gCZpBonuQk6hOTf6BoOp0LsY7wThz1ItSNUWKcV4hXQ8g==",
+      "type": "package",
+      "path": "microsoft.visualstudio.threading/15.0.20-pre",
+      "files": [
+        "lib/dotnet/Microsoft.VisualStudio.Threading.dll",
+        "lib/dotnet/Microsoft.VisualStudio.Threading.xml",
+        "lib/net45/Microsoft.VisualStudio.Threading.dll",
+        "lib/net45/Microsoft.VisualStudio.Threading.xml",
+        "lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.VisualStudio.Threading.dll",
+        "lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/Microsoft.VisualStudio.Threading.xml",
+        "microsoft.visualstudio.threading.15.0.20-pre.nupkg.sha512",
+        "microsoft.visualstudio.threading.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Utilities/15.0.25720-Preview5": {
+      "sha512": "BFdotJli8xhrHo78KNCDhk7MHE055QrAft289gsR1g3YVNSY0Rd61A4BHrvQaf1Bh6PIXlct8AZYqW9armzxvQ==",
+      "type": "package",
+      "path": "microsoft.visualstudio.utilities/15.0.25720-preview5",
+      "files": [
+        "lib/net45/Microsoft.VisualStudio.Utilities.dll",
+        "lib/net45/microsoft.visualstudio.utilities.xml",
+        "microsoft.visualstudio.utilities.15.0.25720-preview5.nupkg.sha512",
+        "microsoft.visualstudio.utilities.nuspec"
+      ]
+    },
+    "Microsoft.VisualStudio.Validation/15.0.11-pre": {
+      "sha512": "M42Em9tatQ6E1hpnypQeDr61nWR+N/iSbGv8X7eo2VeIvs/r3TbNyiWrFhGaI7HxtH/MJaeTTCXc3yAmZuggNg==",
+      "type": "package",
+      "path": "microsoft.visualstudio.validation/15.0.11-pre",
+      "files": [
+        "README.txt",
+        "lib/dotnet/Microsoft.VisualStudio.Validation.dll",
+        "lib/dotnet/Microsoft.VisualStudio.Validation.xml",
+        "lib/net45/Microsoft.VisualStudio.Validation.dll",
+        "lib/net45/Microsoft.VisualStudio.Validation.xml",
+        "lib/portable-net45+win+wpa81+wp80/Microsoft.VisualStudio.Validation.dll",
+        "lib/portable-net45+win+wpa81+wp80/Microsoft.VisualStudio.Validation.xml",
+        "microsoft.visualstudio.validation.15.0.11-pre.nupkg.sha512",
+        "microsoft.visualstudio.validation.nuspec",
+        "tools/2013/RequiresNotNull.snippet",
+        "tools/2013/RequiresNotNullOrEmpty.snippet",
+        "tools/2015/RequiresNotNull.snippet",
+        "tools/2015/RequiresNotNullOrEmpty.snippet",
+        "tools/install-snippets.cmd",
+        "tools/uninstall-snippets.cmd"
+      ]
+    },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "files": [
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "System.Collections.Immutable/1.3.0-preview1-24530-04": {
+      "sha512": "R/jH7v8e8uigip/0WMmbMpMG6pybLrB0XiZ5dzVxl4p817ND39wuULKo+O06wze8TrMs7yjK0eRGGCedY6xRcw==",
+      "type": "package",
+      "path": "system.collections.immutable/1.3.0-preview1-24530-04",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.3.0-preview1-24530-04.nupkg.sha512",
+        "system.collections.immutable.nuspec"
+      ]
+    },
+    "VSSDK.DTE/7.0.4": {
+      "sha512": "uUEaT0sCVnJR54vxfsf5xHpJVWgTrCbl10oKkFuCvJb3I6M5WW4cu9zCTqtYP1i1mYYySGGqooNYiO45kLUkiQ==",
+      "type": "package",
+      "path": "vssdk.dte/7.0.4",
+      "files": [
+        "lib/net20/EnvDTE.xml",
+        "lib/net20/envdte.dll",
+        "lib/net20/stdole.dll",
+        "tools/install.ps1",
+        "vssdk.dte.7.0.4.nupkg.sha512",
+        "vssdk.dte.nuspec"
+      ]
+    },
+    "VSSDK.DTE.10/10.0.4": {
+      "sha512": "gG9iSmn16CPGKhmOQor3RocKyRR9YE+XxVpqiBmACdg+8rGXi5mzRklSpniLqs2iE+7mJlUqQuyStr/gQJXRQw==",
+      "type": "package",
+      "path": "vssdk.dte.10/10.0.4",
+      "files": [
+        "lib/net20/EnvDTE100.xml",
+        "lib/net20/envdte100.dll",
+        "tools/install.ps1",
+        "vssdk.dte.10.10.0.4.nupkg.sha512",
+        "vssdk.dte.10.nuspec"
+      ]
+    },
+    "VSSDK.DTE.8/8.0.4": {
+      "sha512": "pHwKiobdtaPQl/Kmivfu19cwlIXEhPkwAF8Ix9cc2hURWqAXk+IQ5L6oJ/IIyLDaZDFnhyBC4D8cV6NTt7vU+w==",
+      "type": "package",
+      "path": "vssdk.dte.8/8.0.4",
+      "files": [
+        "lib/net20/EnvDTE80.xml",
+        "lib/net20/envdte80.dll",
+        "tools/install.ps1",
+        "vssdk.dte.8.8.0.4.nupkg.sha512",
+        "vssdk.dte.8.nuspec"
+      ]
+    },
+    "VSSDK.DTE.9/9.0.4": {
+      "sha512": "HaC1NQjOpbYJFCdM76AWLG7g8I7iYz0/i7XOz94YQIYosBGQV8q8/gjlfKAheQ6zQS9MZRLpxA13iHrzsCqjVA==",
+      "type": "package",
+      "path": "vssdk.dte.9/9.0.4",
+      "files": [
+        "lib/net20/envdte90.dll",
+        "lib/net20/envdte90.xml",
+        "lib/net20/envdte90a.dll",
+        "lib/net20/envdte90a.xml",
+        "tools/install.ps1",
+        "vssdk.dte.9.9.0.4.nupkg.sha512",
+        "vssdk.dte.9.nuspec"
+      ]
+    },
+    "VSSDK.IDE/7.0.4": {
+      "sha512": "KPXgpya93UDz/JZVegRr+AAewTGw46+8Aq7Dl22jWaqjH2KaH/5ycCLG0LET2OX4VBpp15IjhNw08Y5H0vJMKQ==",
+      "type": "package",
+      "path": "vssdk.ide/7.0.4",
+      "files": [
+        "vssdk.ide.7.0.4.nupkg.sha512",
+        "vssdk.ide.nuspec"
+      ]
+    },
+    "VSSDK.IDE.10/10.0.4": {
+      "sha512": "DT+JlSUaObx8bln4XcvnaouLU4xgwXTgRXXFjdvmMQ5r/8uxmaAjIxTHPGpVAtxm3JQICGsTuetCDPdI0r7Nbg==",
+      "type": "package",
+      "path": "vssdk.ide.10/10.0.4",
+      "files": [
+        "vssdk.ide.10.10.0.4.nupkg.sha512",
+        "vssdk.ide.10.nuspec"
+      ]
+    },
+    "VSSDK.IDE.8/8.0.4": {
+      "sha512": "h3AXxHOMZBRANaDU5B2C3OdcyOOysSN8vJvs4CMqt4Mmh5BSXmezNwE9r9zUoVvyOxfnri8jOtGwGNM581UgmQ==",
+      "type": "package",
+      "path": "vssdk.ide.8/8.0.4",
+      "files": [
+        "vssdk.ide.8.8.0.4.nupkg.sha512",
+        "vssdk.ide.8.nuspec"
+      ]
+    },
+    "VSSDK.IDE.9/9.0.4": {
+      "sha512": "FX3N+LeL1qyJvWOBvOMfQqL25LCQRgk89vlzvMOeFOuiHu7kD7AyjaujcduHCJh5KJ/bPzHtPsEyDwUIX+7/dQ==",
+      "type": "package",
+      "path": "vssdk.ide.9/9.0.4",
+      "files": [
+        "vssdk.ide.9.9.0.4.nupkg.sha512",
+        "vssdk.ide.9.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Microsoft.VisualStudio.CoreUtility >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Editor >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Imaging >= 15.0.25720-Preview5",
+      "Microsoft.VisualStudio.OLE.Interop >= 7.10.6070",
+      "Microsoft.VisualStudio.Shell.15.0 >= 15.0.25720-Preview5",
+      "Microsoft.VisualStudio.Shell.Framework >= 15.0.25720-Preview5",
+      "Microsoft.VisualStudio.Shell.Interop >= 7.10.6071",
+      "Microsoft.VisualStudio.Shell.Interop.10.0 >= 10.0.30319",
+      "Microsoft.VisualStudio.Shell.Interop.11.0 >= 11.0.61030",
+      "Microsoft.VisualStudio.Shell.Interop.12.0 >= 12.0.30110",
+      "Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Shell.Interop.8.0 >= 8.0.50727",
+      "Microsoft.VisualStudio.Shell.Interop.9.0 >= 9.0.30729",
+      "Microsoft.VisualStudio.Text.Data >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Text.Logic >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Text.UI >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.Text.UI.Wpf >= 15.0.25726-Preview5",
+      "Microsoft.VisualStudio.TextManager.Interop >= 7.10.6070",
+      "Microsoft.VisualStudio.TextManager.Interop.8.0 >= 8.0.50727",
+      "Microsoft.VisualStudio.Threading >= 15.0.20-pre",
+      "Microsoft.VisualStudio.Utilities >= 15.0.25720-Preview5",
+      "Microsoft.VisualStudio.Validation >= 15.0.11-pre",
+      "Newtonsoft.Json >= 9.0.1",
+      "System.Collections.Immutable >= 1.3.0-preview1-24530-04",
+      "VSSDK.DTE >= 7.0.4",
+      "VSSDK.DTE.10 >= 10.0.4",
+      "VSSDK.DTE.8 >= 8.0.4",
+      "VSSDK.DTE.9 >= 9.0.4"
+    ],
+    ".NETFramework,Version=v4.6": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {},
+  "packageFolders": {
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+  }
+}

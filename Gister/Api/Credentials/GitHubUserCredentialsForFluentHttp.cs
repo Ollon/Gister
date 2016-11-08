@@ -7,7 +7,7 @@ namespace EchelonTouchInc.Gister.Api.Credentials
     {
         public void Apply(FluentHttpRequest request, GitHubCredentials credentials)
         {
-            var userCreds = (GitHubUserCredentials)credentials;
+            GitHubUserCredentials userCreds = (GitHubUserCredentials)credentials;
 
             request.AuthenticateUsing(new HttpBasicAuthenticator(userCreds.Username, userCreds.Password));
         }

@@ -4,7 +4,7 @@ namespace EchelonTouchInc.Gister.Api
     {
         public string CreateMessage(string filename, string content, string description,bool isPublic)
         {
-            var realContent = new CleansGistContent().Clean(content);
+            string realContent = new CleansGistContent().Clean(content);
 
 
             string retValue = "{"

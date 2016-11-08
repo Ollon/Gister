@@ -13,13 +13,13 @@ namespace EchelonTouchInc.Gister
         {
             Encrypt = input =>
                           {
-                              var byt = Encoding.UTF8.GetBytes(input);
+                              byte[] byt = Encoding.UTF8.GetBytes(input);
                               return Convert.ToBase64String(byt);
                           };
             Decrypt = input =>
                           {
 
-                              var byt = Convert.FromBase64String(input);
+                              byte[] byt = Convert.FromBase64String(input);
                               return Encoding.UTF8.GetString(byt);
                           };
         }
@@ -32,7 +32,7 @@ namespace EchelonTouchInc.Gister
 
         public bool IsAvailable()
         {
-            var path = GetPathToCredentialsFile();
+            string path = GetPathToCredentialsFile();
 
             return File.Exists(path);
         }
@@ -44,10 +44,10 @@ namespace EchelonTouchInc.Gister
 
         public void Cache(GitHubCredentials credentials)
         {
-            var userCredentials = credentials as GitHubUserCredentials;
+            GitHubUserCredentials userCredentials = credentials as GitHubUserCredentials;
             if (userCredentials == null) return;
 
-            var path = GetPathToCredentialsFile();
+            string path = GetPathToCredentialsFile();
 
             PurgeAnyCache();
 
@@ -56,12 +56,12 @@ namespace EchelonTouchInc.Gister
 
         public GitHubCredentials Retrieve()
         {
-            var path = GetPathToCredentialsFile();
+            string path = GetPathToCredentialsFile();
 
-            var lines = File.ReadAllLines(path);
+            string[] lines = File.ReadAllLines(path);
 
-            var username = Decrypt(lines[0]);
-            var password = Decrypt(lines[1]);
+            string username = Decrypt(lines[0]);
+            string password = Decrypt(lines[1]);
 
             return new GitHubUserCredentials(username, password);
         }
@@ -74,7 +74,7 @@ namespace EchelonTouchInc.Gister
 
         private static string VsProfileCredentials()
         {
-            var profilePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string profilePath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 
             return Path.Combine(profilePath, CredentialsFileName);
         }
@@ -86,7 +86,7 @@ namespace EchelonTouchInc.Gister
 
         private void PurgeAnyCache()
         {
-            var path = GetPathToCredentialsFile();
+            string path = GetPathToCredentialsFile();
 
             if (File.Exists(path))
                 File.Delete(path);

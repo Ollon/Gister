@@ -12,11 +12,11 @@ namespace EchelonTouchInc.Gister.Api
 
         public string SendGist(string fileName, string content, string description, bool isPublic, GitHubCredentials credentials)
         {
-            var gistAsJson = new CreatesGistMessages().CreateMessage(fileName, content, description, isPublic);
+            string gistAsJson = new CreatesGistMessages().CreateMessage(fileName, content, description, isPublic);
 
-            using (var stream = new MemoryStream())
+            using (MemoryStream stream = new MemoryStream())
             {
-                var request = new FluentHttpRequest()
+                FluentHttpRequest request = new FluentHttpRequest()
                     .BaseUrl("https://api.github.com")
                     .ResourcePath("/gists")
                     .Method("POST")
@@ -27,7 +27,7 @@ namespace EchelonTouchInc.Gister.Api
 
                 AppliesGitHubCredentialsToFluentHttpRequest.ApplyCredentials(credentials, request);
 
-                var response = request
+                FluentHttpAsyncResult response = request
                     .Execute();
 
                 if (response.Response.HttpWebResponse.StatusCode != HttpStatusCode.Created)
@@ -41,7 +41,7 @@ namespace EchelonTouchInc.Gister.Api
         private static string PeelOutGistHtmlUrl(FluentHttpAsyncResult response)
         {
             response.Response.SaveStream.Seek(0, SeekOrigin.Begin);
-            var gistJson = FluentHttpRequest.ToString(response.Response.SaveStream);
+            string gistJson = FluentHttpRequest.ToString(response.Response.SaveStream);
 
             dynamic gist = JObject.Parse(gistJson);
 

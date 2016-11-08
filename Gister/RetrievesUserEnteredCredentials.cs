@@ -12,7 +12,7 @@ namespace EchelonTouchInc.Gister
 
         private GitHubCredentials GetCredentials()
         {
-            var prompt = CreatePrompt();
+            ICredentialsPrompt prompt = CreatePrompt();
 
             prompt.Prompt();
             if (prompt.Result != true)

@@ -9,13 +9,13 @@ namespace EchelonTouchInc.Gister.Api.Credentials
     {
         public static void ApplyCredentials(GitHubCredentials credentials, FluentHttpRequest request)
         {
-            var map = new Dictionary<Type, CredentialVisitor>()
+            Dictionary<Type, CredentialVisitor> map = new Dictionary<Type, CredentialVisitor>()
                           {
                               {typeof (AnonymousGitHubCredentials), new AnonymousGitHubCredentialsForFluentHttp()},
                               {typeof (GitHubUserCredentials), new GitHubUserCredentialsForFluentHttp()}
                           };
 
-            var credentialApplier = (from item in map
+            CredentialVisitor credentialApplier = (from item in map
                                      where item.Key == credentials.GetType()
                                      select item.Value).First();
 

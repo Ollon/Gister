@@ -17,6 +17,8 @@
 *.lib
 *.sbr
 *.scc
+binaries
+Binaries
 [Bb]in
 [Dd]ebug*/
 obj/
